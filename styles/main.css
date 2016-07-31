@@ -1,0 +1,82 @@
+.main-header {
+  background: #0080c2;
+  height: 70vh;
+  width: 100%;
+}
+
+.top-links {
+  display: flex;
+  padding: 30px 5%;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+.top-links li {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+
+.top-links li:first-child {
+  font-size: 2.5rem;
+  position: absolute;
+  left: 30px;
+}
+
+.header-center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 90%;
+  height: 85%;
+}
+
+.header-image {
+  background: url('../img/header logo.png') center no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100;
+}
+
+.header-down-arrow {
+  margin: auto;
+  height: 0;
+  width: 0;
+  border-top: 25px solid #0080c2;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+
+}
+
+
+/*---Projects---*/
+
+.projects {
+  width: 70%;
+  margin: auto;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.projects p {
+  margin-top: 20px;
+  width: 30%;
+}
+
+
+.about-me {
+  background: #F20020;
+  color: white;
+  text-align: center;
+}
+
+.about-me p {
+  width: 70%;
+  margin: 20px auto 0 auto;
+}
