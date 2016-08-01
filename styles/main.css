@@ -54,29 +54,123 @@
 
 /*---Projects---*/
 
-.projects {
-  width: 70%;
-  margin: auto;
+section {
+  width: 80%;
+  margin: 50px auto;
 }
 
 .projects h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .projects p {
   margin-top: 20px;
-  width: 30%;
+  font-size: 1.5rem;
 }
 
 
 .about-me {
-  background: #F20020;
-  color: white;
   text-align: center;
 }
 
 .about-me p {
   width: 70%;
   margin: 20px auto 0 auto;
+}
+
+/*---Views---*/
+
+.shopper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopper:nth-child(even) {
+  order: 2;
+}
+
+.browser {
+  max-width: 720;
+  max-height: 500;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.top-browser {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.browser-buttons {
+  display: flex;
+}
+
+.browser-buttons li {
+  background: red;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.browser-buttons li:nth-child(2) {
+  background: yellow;
+}
+
+.browser-buttons li:nth-child(3) {
+  background: green;
+}
+
+
+.browser-url {
+  margin-left: 10px;
+  height: 30px;
+  width: 580px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.browser-content {
+  height: 460px;
+  width: 100%;
+  overflow: auto;
+}
+
+.browser-content img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.shopper-info {
+  margin-left: 80px;
+}
+
+.projects button {
+  border: none;
+  padding: 20px 50px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.projects button:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+footer {
+  background: black;
+  height: 200px;
+  width: 100%;
 }
