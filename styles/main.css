@@ -1,5 +1,6 @@
 .main-header {
-  background: #0080c2;
+  background: url('../img/computer.jpg') center no-repeat;
+  background-size: cover;
   height: 70vh;
   width: 100%;
 }
@@ -19,19 +20,15 @@
 }
 
 .top-links li:first-child {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   position: absolute;
   left: 30px;
+  padding-right: 30px;
 }
 
-.header-center {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  width: 90%;
-  height: 85%;
+.top-links li img {
+  width: 2rem;
+  margin-right: 10px;
 }
 
 .header-image {
@@ -45,11 +42,12 @@
   font-size: 5rem;
   color: white;
   position: absolute;
-  top: 50%;
-  left: 5%;
+  top: 40%;
+  right: 5%;
+  text-align: right;
 }
 
-.header-down-arrow {
+/*.header-down-arrow {
   margin: auto;
   height: 0;
   width: 0;
@@ -57,14 +55,17 @@
   border-right: 25px solid transparent;
   border-left: 25px solid transparent;
 
-}
+}*/
 
 
 /*---Projects---*/
 
-section {
-  width: 80%;
-  margin: 50px auto;
+.project-wrapper {
+  width: 100%;
+  padding: 48px 5%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .projects h2 {
@@ -76,21 +77,8 @@ section {
 .projects p {
   margin-top: 20px;
   font-size: 1.5rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin-bottom: 10px;
-}
-
-
-/*---About Me---*/
-
-.about-me {
-  text-align: center;
-}
-
-.about-me p {
-  width: 70%;
-  margin: 20px auto 0 auto;
-  font-size: 1.5rem;
 }
 
 /*---Views---*/
@@ -99,25 +87,27 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px auto;
 }
 
-.shopper:nth-child(even) > .browser {
+.project-wrapper:nth-child(even) > .browser {
   order: 1;
   margin-left: 50px;
 }
 
 .browser {
-  max-width: 720;
-  max-height: 500;
-  border: 1px solid black;
+  width: 92.5%;
+  max-width: 722px;
+  height: 100%;
+  border: 1px solid #999;
   border-radius: 5px;
+  position: relative;
+  margin-right: 7.5%;
 }
 
 .top-browser {
   width: 100%;
   height: 40px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #999;
   display: flex;
   align-items: center;
 }
@@ -146,15 +136,15 @@ section {
 .browser-url {
   margin-left: 10px;
   height: 30px;
-  width: 580px;
-  border: 1px solid gray;
+  width: calc(100% - 90px);
+  border: 1px solid #999;
   display: flex;
   align-items: center;
   padding: 0 5px;
 }
 
 .browser-content {
-  height: 460px;
+  height: 492px;
   width: 100%;
   overflow: auto;
 }
@@ -168,29 +158,117 @@ section {
 /*---Mobile---*/
 
 .mobile-view {
-  height: 500px;
-  width: 260px;
-  border: 1px solid black;
-  border-radius: 10px;
+  width: 30%;
+  padding: 0 10px;
+  border: 1px solid #999;
+  border-radius: 15px;
   position: absolute;
   left: 100%;
-  top: 100%;
+  top: 75%;
   transform: translate(-50%, -50%);
+  z-index: 10;
+  background: white;
+}
+
+.mobile-top {
+  height: 54px;
+  width: 100%;
+  position: relative;
+}
+
+.mobile-camera {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #999;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile-notification {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #999;
+  position: absolute;
+  top: 36px;
+  left: calc(50% - 36px);
+  transform: translateX(-50%);
+}
+
+.mobile-speaker {
+  height: 8px;
+  width: 48px;
+  background: #999;
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
 }
 
 .mobile-screen {
-  width: 230px;
-  height: 370px;
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid black;
+  border: 1px solid #999;
+  height: 320px;
+  width: 100%;
+  overflow: hidden;
 }
 
+.mobile-screen img {
+  width: 100%;
+}
 
-.shopper-info {
-  margin-left: 80px;
+.mobile-bottom {
+  height: 54px;
+  width: 100%;
+  position: relative;
+}
+
+.mobile-home-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-home-square {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.project-wrapper:nth-child(even) > .browser > .mobile-view {
+  left: 0;
+}
+
+/*---Project Info---*/
+
+
+.project-info {
+  width: 37.5%;
+  padding: 48px 5%;
+}
+
+.tags {
+  display: flex;
+}
+
+.tags li {
+  background: black;
+  padding: 5px 15px;
+  color: white;
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .projects button {
@@ -201,6 +279,7 @@ section {
   text-transform: uppercase;
   margin-top: 10px;
   border: 1px solid black;
+  font-weight: bold;
 }
 
 .projects button:hover {
@@ -209,7 +288,62 @@ section {
   border: 1px solid black;
 }
 
+
+
+hr {
+  margin: 50px auto;
+  width: 80%;
+  /*border: 1px solid black;*/
+}
+
+/*---About Me---*/
+
+.about-me {
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.photo {
+  height: 300px;
+  width: 300px;
+  background: url('../img/me.jpg') center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-me p {
+  width: 70%;
+  margin: 20px auto 0 auto;
+  font-size: 1.5rem;
+}
+
+/*---Skills---*/
+
+.skills {
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/*---Footer---*/
+
 footer {
+  margin-top: 50px;
   background: black;
   height: 60px;
   width: 100%;

@@ -1,10 +1,20 @@
 $(document).ready(function() {
 
-  $('.top-links li span').hide()
+  // $('.top-links li span').hide()
+  //
+  // $('.logo').hover(function() {
+  //   $('.logo span').show('slide',{direction:'right'},1000);
+  // }, function() {
+  //     $('.logo span').hide();
+  // })
 
-  $('.top-links li:first-child').hover(function() {
-    $('.top-links li span').show();
-  })
+//   $( "li" ).hover(
+//   function() {
+//     $( this ).append( $( "<span> ***</span>" ) );
+//   }, function() {
+//     $( this ).find( "span:last" ).remove();
+//   }
+// );
 
 
 });
