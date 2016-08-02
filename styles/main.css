@@ -41,6 +41,14 @@
   width: 100;
 }
 
+.header-text {
+  font-size: 5rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
 .header-down-arrow {
   margin: auto;
   height: 0;
@@ -68,8 +76,12 @@ section {
 .projects p {
   margin-top: 20px;
   font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
+
+/*---About Me---*/
 
 .about-me {
   text-align: center;
@@ -78,6 +90,7 @@ section {
 .about-me p {
   width: 70%;
   margin: 20px auto 0 auto;
+  font-size: 1.5rem;
 }
 
 /*---Views---*/
@@ -86,10 +99,12 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 50px auto;
 }
 
-.shopper:nth-child(even) {
-  order: 2;
+.shopper:nth-child(even) > .browser {
+  order: 1;
+  margin-left: 50px;
 }
 
 .browser {
@@ -149,6 +164,31 @@ section {
   border-radius: 5px;
 }
 
+
+/*---Mobile---*/
+
+.mobile-view {
+  height: 500px;
+  width: 260px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.mobile-screen {
+  width: 230px;
+  height: 370px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid black;
+}
+
+
 .shopper-info {
   margin-left: 80px;
 }
@@ -159,7 +199,7 @@ section {
   background: black;
   color: white;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid black;
 }
 
@@ -171,6 +211,13 @@ section {
 
 footer {
   background: black;
-  height: 200px;
+  height: 60px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h6 {
+  color: white;
 }
