@@ -31,6 +31,11 @@
   margin-right: 10px;
 }
 
+.top-links li a {
+  text-decoration: none;
+  color: white;
+}
+
 .header-image {
   background: url('../img/header logo.png') center no-repeat;
   background-size: contain;
@@ -60,12 +65,16 @@
 
 /*---Projects---*/
 
+.projects {
+  margin-top: 20px;
+}
+
 .project-wrapper {
   width: 100%;
   padding: 48px 5%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .projects h2 {
@@ -91,7 +100,8 @@
 
 .project-wrapper:nth-child(even) > .browser {
   order: 1;
-  margin-left: 50px;
+  margin-left: 7.5%;
+  margin-right: 0;
 }
 
 .browser {
@@ -261,6 +271,7 @@
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tags li {
@@ -271,7 +282,7 @@
   margin-top: 10px;
 }
 
-.projects button {
+.projects button, .about-me button {
   border: none;
   padding: 20px 50px;
   background: black;
@@ -282,16 +293,19 @@
   font-weight: bold;
 }
 
-.projects button:hover {
+.projects button:hover, .about-me button:hover {
   background: white;
   color: black;
   border: 1px solid black;
 }
 
+.about-me button {
+  margin-top: 30px;
+}
 
 
 hr {
-  margin: 50px auto;
+  margin: 80px auto;
   width: 80%;
   /*border: 1px solid black;*/
 }
@@ -338,6 +352,80 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.skills-list li {
+  margin: 20px 60px;
+}
+
+.skills-list li img {
+  height: 125px;
+  width: 125px;
+}
+
+.skills-list h5 {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.express {
+  height: 125px;
+  width: 125px;
+  background: url('../img/techs/express.png') center no-repeat;
+  background-size: contain;
+}
+
+
+/*---Contact---*/
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.5rem;
+}
+
+.contact form {
+  margin: 20px auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+}
+
+.contact form input, .contact form textarea {
+  font-family: 'Merriweather', sans-serif;
+  resize: none;
+}
+
+
+.contact-submit {
+  background: black;
+  color: white;
+  padding: 10px 0;
+  border: none;
+}
+
+.contact-top {
+  display: flex;
+  justify-content: center;
 }
 
 /*---Footer---*/
